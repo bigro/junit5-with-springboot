@@ -20,8 +20,10 @@ public class SpringRestAssuredTest {
         given()
                 .port(port)
                 .basePath("/hello")
+                
                 .when()
                 .get("")
+                
                 .then()
                 .statusCode(200)
                 .body("user", equalTo("user"))
