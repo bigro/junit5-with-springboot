@@ -10,3 +10,12 @@ https://stackoverflow.com/questions/46384624/java-lang-nosuchmethoderror-when-ru
 ### RunWithアノテーションがJUnit5ではなくなっていた
 とりあえず `@SpringJUnitConfig` つけといた。
 https://qiita.com/kazuki43zoo/items/4a9ead225a9a9897af4a
+
+## REST Assured
+### 制約有無
+- 送信できるHTTPメソッドに制約はなさそう
+- レスポンスの検証について、JSON/XMLなどのBodyだけでなく、HTTPヘッダーやCookieなどの検証も可能
+- Json Scheamaでの検証も可能
+- リクエストパラメータはFormパラメータ/クエリパラメータどちらの形でも送信できる
+- リクエストパラメータにオブジェクトも指定可能
+- 認証はBacicやOAuth。SpringSecurityも可能みたいだが、詳しく見れてない
